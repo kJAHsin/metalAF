@@ -4,6 +4,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    transform-style: preserve-3d;
 }
 
 body {
@@ -41,6 +42,7 @@ h1 {
     display: flex;
     position: absolute;
     inset: 0;
+    perspective: 1500px;
 }
 
 .bg > img {
@@ -49,7 +51,7 @@ h1 {
     width: 12vw;
     z-index: -1;
     transform-origin: bottom right;
-    transform: translateY(-40%);
+    transform: translateY(-40%) translateZ(-50px);
     animation: rock 1s ease-in-out infinite;
 }
 
@@ -59,6 +61,6 @@ h1 {
 
 @keyframes rock {
     20% {
-        transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg) translateZ(500px);
     }
 }
