@@ -4,4 +4,20 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-  }
+}
+
+body {
+    min-height: 100dvh;
+    background: black;
+    display: flex;
+}
+
+.container {
+    margin: auto auto;
+}
+
+h1 {
+    color: red;
+    font-size: 5em;
+    font-family: "Blaka Hollow", display;
+}
